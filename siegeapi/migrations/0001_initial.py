@@ -18,6 +18,7 @@ class Migration(migrations.Migration):
                 ('operator', models.CharField(max_length=20)),
                 ('skills', models.TextField()),
                 ('counters', models.TextField()),
+                ('side', models.TextField()),
             ],
         ),
     ]

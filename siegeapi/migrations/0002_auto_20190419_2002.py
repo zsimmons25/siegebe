@@ -10,26 +10,10 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='siege',
-            name='skills',
-        ),
-        migrations.AddField(
-            model_name='siege',
-            name='armor',
-            field=models.TextField(default='Smoke'),
-            preserve_default=False,
-        ),
-        migrations.AddField(
-            model_name='siege',
-            name='equipment',
-            field=models.TextField(default='Smoke'),
-            preserve_default=False,
-        ),
         migrations.AddField(
             model_name='siege',
             name='faction',
-            field=models.TextField(default='GIGN'),
+            field=models.TextField(default='FBI'),
             preserve_default=False,
         ),
         migrations.AddField(
@@ -40,8 +24,32 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='siege',
+            name='equipment',
+            field=models.TextField(default='Smoke'),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='siege',
+            name='armor',
+            field=models.TextField(default='1'),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='siege',
             name='speed',
             field=models.TextField(default='3'),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='siege',
+            name='counters',
+            field=models.TextField(default='.'),
+            preserve_default=False,
+        ),
+        migrations.AddField(
+            model_name='siege',
+            name='side',
+            field=models.TextField(default='ATK'),
             preserve_default=False,
         ),
     ]

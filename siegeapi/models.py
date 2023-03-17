@@ -6,9 +6,22 @@ class Siege(models.Model):
     faction = models.TextField()
     gadget = models.TextField()
     equipment = models.TextField()
+    equip1 = models.TextField()
+    equip2 = models.TextField()
     armor = models.PositiveSmallIntegerField()
     speed = models.PositiveSmallIntegerField()
+    side = models.TextField()
+    weapons = models.TextField()
+    prim1 = models.TextField()
+    prim2 = models.TextField()
+    prim3 = models.TextField()
+    secon1 = models.TextField()
+    secon2 = models.TextField()
     counters = models.TextField()
+    count1 = models.TextField()
+    count1p = models.TextField()
+    count2 = models.TextField()
+    count2p = models.TextField()
 
     def _op_(self):
         return self.operator
