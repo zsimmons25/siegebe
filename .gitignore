@@ -1,4 +1,5 @@
-siegeenv
+.env
 .DS_Store
 siegeapi/__pycache__
+siegeapi/.DS_Store
 siegebe/.DS_Store
