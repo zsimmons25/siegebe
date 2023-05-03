@@ -25,6 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('users/', include(('siegeapi.routers', 'siegeapi'),
-         namespace='siegeapi-users')),
+    namespace='siegeapi-users')),
 
 ]
